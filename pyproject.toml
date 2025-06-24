@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osdag-column"
+version = "0.1.0"
+description = "Axially Loaded Column plugin for Osdag"
+authors = [
+    {name = "Osdag Team", email = "osdag@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+
+[project.entry-points."osdag.plugins"]
+column_plugin = "column_plugin:plugin_class"
